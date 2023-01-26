@@ -1,0 +1,87 @@
+name: Bug Report
+description: Create a report to help us improve
+title: "[BUG] <title>"
+labels: [bug]
+body:
+- type: dropdown
+  id: type
+  attributes:
+    label: Type
+    description: "Which part of the plugin are you reporting?"
+    multiple: true
+    options:
+      - Plugin
+      - Addon
+      - Wiki
+      - Other
+  validations:
+    required: true
+- type: input
+  id: specific
+  attributes:
+    label: Specific
+    description: "The specific parts you are reporting"
+    placeholder: "Example: Menu, Button, Target Menu, ASCII-Placeholders, VaultBridge, etc."
+  validations:
+    required: true
+- type: input
+  id: server
+  attributes:
+    label: Server Software
+    description: "The server software & version you are using with the plugin"
+    placeholder: "Example: Spigot 1.8.8, Paper 1.12.2, etc."
+  validations:
+    required: true
+- type: textarea
+  id: server
+  attributes:
+    label: Server Information
+    description: "Tell us more about your server (your operating system, installed plugins, etc.)"
+- type: input
+  id: version
+  attributes:
+    label: Plugin Version
+    description: "The version of the plugin you are using"
+    placeholder: "Example: 6.2, 7.4, etc."
+  validations:
+    required: true
+- type: textarea
+  id: content
+  attributes:
+    label: Content
+    description: "What seems to be the problem?"
+  validations:
+    required: true
+- type: textarea
+  id: steps
+  attributes:
+    label: Steps to reproduce
+    description: "The steps you did to get this problem"
+    value: |
+      1.
+      2.
+      3.
+      ...
+    render: bash
+  validations:
+    required: true
+- type: textarea
+  id: expected
+  attributes:
+    label: Expected Behaviour
+    description: "The alternative behaviour you was expecting"
+  validations:
+    required: true
+- type: textarea
+  id: expected
+  attributes:
+    label: Actual Behaviour
+    description: "The actual behaviour you got"
+  validations:
+    required: true
+- type: textarea
+  id: screenshot
+  attributes:
+    label: Screenshots & Links
+    description: "The screenshots & related links to show more about your problem"
+    placeholder: "You can provide a link to the image or drop it to this box"
