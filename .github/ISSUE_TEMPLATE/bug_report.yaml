@@ -33,7 +33,7 @@ body:
   validations:
     required: true
 - type: textarea
-  id: server
+  id: server_info
   attributes:
     label: Server Information
     description: "Tell us more about your server (your operating system, installed plugins, etc.)"
