@@ -1,0 +1,42 @@
+name: Feature Request
+description: Suggest an idea for this project
+title: "[FEATURE] <title>"
+labels: [enhancement]
+body:
+- type: dropdown
+  id: type
+  attributes:
+    label: Type
+    description: "Which part of the plugin are you requesting a feature?"
+    multiple: true
+    options:
+      - Plugin
+      - Addon
+      - Wiki
+      - Other
+  validations:
+    required: true
+- type: input
+  id: specific
+  attributes:
+    label: Specific
+    description: "The specific parts you are requesting a geature"
+    placeholder: "Example: Menu, Button, Target Menu, ASCII-Placeholders, VaultBridge, etc."
+- type: textarea
+  id: content
+  attributes:
+    label: Content
+    description: "What is your request?"
+  validations:
+    required: true
+- type: textarea
+  id: alternative
+  attributes:
+    label: Alternative
+    description: "Is there any alternatives to consider in case your main request is not possible?"
+- type: textarea
+  id: screenshot
+  attributes:
+    label: Screenshots & Links
+    description: "The screenshots & related links to show more about your request"
+    placeholder: "You can provide a link to the image or drop it to this box"
