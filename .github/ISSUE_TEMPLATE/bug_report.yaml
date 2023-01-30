@@ -41,7 +41,7 @@ body:
   id: version
   attributes:
     label: Plugin Version
-    description: "The version of the plugin you are using"
+    description: "The specific version of the plugin you are using (Don't use `latest`)"
     placeholder: "Example: 6.2, 7.4, etc."
   validations:
     required: true
