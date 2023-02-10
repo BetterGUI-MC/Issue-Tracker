@@ -20,7 +20,7 @@ body:
   id: specific
   attributes:
     label: Specific
-    description: "The specific parts you are requesting a geature"
+    description: "The specific parts you are requesting a feature"
     placeholder: "Example: Menu, Button, Target Menu, ASCII-Placeholders, VaultBridge, etc."
 - type: textarea
   id: content
