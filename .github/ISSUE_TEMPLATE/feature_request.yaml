@@ -12,7 +12,7 @@ body:
     options:
       - Plugin
       - Addon
-      - Wiki
+      - Wiki / Docs
       - Other
   validations:
     required: true
